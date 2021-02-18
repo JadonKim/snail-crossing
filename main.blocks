@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="(yn;0*4o9F[ur_jjCj;X">Player</variable><variable type="KIND_SpriteKind" id="lx_h1^NLH1=StqykJNS@">Projectile</variable><variable type="KIND_SpriteKind" id="OIuoS;d$2L`./NFmsz-j">Food</variable><variable type="KIND_SpriteKind" id="8Ts[o_@;jVGR6%BrZQ#[">Enemy</variable><variable id="8QV`qd2/p!zz%OC(J$#~">mySprite</variable><variable id="[NbXRg];Y+(a:hsJ*Vn%">Snail</variable></variables><block type="pxt-on-start" id="@9,xi,?8E^x$Nk7x:*L]" x="-10" y="-10"><statement name="HANDLER"><block type="tilemap_editor" id="*6=AZ1ak6k=+T,YsrW=D"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data><next><block type="gamesetbackgroundcolor" id="Wq#oJr?zXD#k(LQoZ)M$"><value name="color"><shadow type="colorindexpicker" id="4Kp3]#,WP5}?oQPu6}Qf"><field name="index">7</field></shadow></value><next><block type="variables_set" id=".SNZh$A%jOA$`8EZQD,O"><field name="VAR" id="[NbXRg];Y+(a:hsJ*Vn%">Snail</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="zA^JCfV+3Ly2;c{@0ini"><value name="img"><shadow type="screen_image_picker" id="xp3QfWhqNu?WEv,)dN~c"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . c c . . . 
+. . . . . . . c c c c 6 3 c . . 
+. . . . . . c 6 3 3 3 3 6 c . . 
+. . c c . c 6 c c 3 3 3 3 3 c . 
+. c 5 5 c 6 c 5 5 c 3 3 3 3 3 c 
+. f f 5 c 6 c 5 f f 6 3 3 3 c c 
+. f f 5 3 c 3 5 f f 6 6 6 6 c c 
+. . b 5 5 3 5 5 c 3 3 3 3 3 3 c 
+. c c 5 5 5 5 5 b c c 3 3 3 3 c 
+c 5 5 4 5 5 5 4 b 5 5 c 3 3 c . 
+b 5 4 b 4 4 4 4 b b 5 c b b . . 
+c 5 5 5 c 4 c 5 5 5 c 4 c 5 c . 
+c 5 5 5 5 c 5 5 5 5 c 4 c 5 c . 
+. c c c c c c c c c . . c c c . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image1"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id=";TnS$U7DHJ4bqu]rI]P3"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="mapplaceontile" id="XMzF4YLp-2{?t@aOQU@="><value name="sprite"><block type="variables_get" id="hGEZb+=--9F{I@A4|wmL"><field name="VAR" id="[NbXRg];Y+(a:hsJ*Vn%">Snail</field></block></value><value name="loc"><shadow type="mapgettile" id="^%Uk0Vu.T+}41FkANkGe"><value name="col"><shadow type="math_number" id="|p1Q45bla;G9UhNPZT~="><field name="NUM">5</field></shadow></value><value name="row"><shadow type="math_number" id="1s3hC20e`OGRo3wxxUOQ"><field name="NUM">16</field></shadow></value></shadow></value><next><block type="camerafollow" id="j~eZ[0(_E[19JXSL?G5D"><value name="sprite"><block type="variables_get" id="IY6Du9BMe=]-=PUcW`5]"><field name="VAR" id="[NbXRg];Y+(a:hsJ*Vn%">Snail</field></block></value></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="9%~!N:#;lAEX2{?7`s?b" x="370" y="370"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field></block><block type="keyonevent" id="}D~k`=mo1Ga3gRpSC[D#" x="10" y="390"><field name="button">controller.up</field><field name="event">ControllerButtonEvent.Pressed</field></block><block type="keyonevent" id="^8GRTFDu3+j_itI9kS`8" x="10" y="610"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field></block><block type="keyonevent" id="8]?ts@bEvVV,U]Kf}%HY" x="410" y="610"><field name="button">controller.down</field><field name="event">ControllerButtonEvent.Pressed</field></block></xml>
